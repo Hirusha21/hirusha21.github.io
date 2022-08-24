@@ -1,0 +1,9 @@
+/*!
+ * Item: Kitzu
+ * Description: Personal Portfolio Template
+ * Author/Developer: Exill
+ * Author/Developer URL: https://geekhirusha.orgfree.com/user/exill
+ * Version: v2.0.0
+ * License: Themeforest Standard Licenses: https://geekhirusha.orgfree.com/licenses
+ */
+!function(n){"use strict";n((function(){})),n(window).on("load",(function(){}))}(jQuery);
