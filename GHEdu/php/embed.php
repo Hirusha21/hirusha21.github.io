@@ -1,6 +1,6 @@
 <?php 
   $videoURL = "https://www.youtube.com/watch?v=0iAUo8W-nDQ";
-  $convertedURL = str_replace("watch?v=","embed/", $videoURL);
+  $convertedURL = str_replace("https://youtu.be/","https://www.youtube.com/embed/", $videoURL);
 ?>
 <!DOCTYPE html>
 <html lang="en">
