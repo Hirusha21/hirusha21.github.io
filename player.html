@@ -123,7 +123,7 @@
                                 <div class="form-group">
                                     <label for="username" class="required">
                                         Enter GHEdu id</label><br>
-                                    <input size="30" style="color: #00ff2b; background-color:#20202096; border-color: #35e5c6b5; box-shadow: red;" type="text" id="myinText" placeholder="Ex: tt6468322" value="">
+                                    <input size="30" style="color: #00ff2b; background-color:#20202096; border-color: #35e5c6b5; box-shadow: red;" type="text" id="myinText" placeholder="Ex: GH123456" value="">
                                 </div>
                             </div>
                             <!--  /. Tab Content: find by title -->
@@ -144,7 +144,7 @@
     <script>
 function myFunction() {
   var x = document.getElementById("myinText").value;
-  var linke = "https://www.w3schools.com/html/"+x+".mp4";
+  var linke = "https://fsblink2.herokuapp.com/"+x;
     document.getElementById("myifurl").src = linke;
     document.getElementById("deeemo").innerHTML = x;
 }
