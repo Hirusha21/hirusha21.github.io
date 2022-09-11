@@ -17,10 +17,10 @@ body {
 }
 
 .wrapper .title {
-  padding: 50px 0;
+  padding: 19px 0;
   text-align: center;
   font-weight: 700;
-  font-size: 52px;
+  font-size: 82px;
   color: #fff;
 }
 
@@ -37,7 +37,7 @@ body {
   border-bottom: 2px solid #e5edfa;
   width: 100%;
   outline: none;
-  padding: 10px;
+  padding: 6px;
   background: transparent;
   color: #fff;
   font-size: 16px;
