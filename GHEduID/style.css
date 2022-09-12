@@ -13,7 +13,7 @@ body {
 }
 
 .wrapper .header {
-  background: #29a5d8;
+  background: #00000000;
 }
 
 .wrapper .title {
@@ -26,7 +26,7 @@ body {
 
 .wrapper .search_box {
   max-width: 1000px;
-  background: #29a5d8;
+  background: #00000000;
   margin: 0 auto;
   padding: 25px 0 50px;
   border-radius: 3px;
@@ -93,7 +93,7 @@ body {
 }
 
 .table_header ul li .item {
-  border-bottom: 2px solid #eaeaea;
+  border-bottom: 2px solid #ff0000;
   font-weight: 600;
 }
 
@@ -103,7 +103,7 @@ body {
 }
 
 .table_body ul li .item {
-  border-bottom: 1px solid #efefef;
+  border-bottom: 1px solid #008cff;
 }
 
 .table_body ul li .item .status span {
@@ -135,7 +135,7 @@ body {
 
 .table_body ul li .item .reopened {
   background: #d6f2ff;
-  color: #29a5d8;
+  color: #00000000;
 }
 
 .table_body ul li .item .canceled {
