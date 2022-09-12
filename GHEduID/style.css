@@ -13,20 +13,20 @@ body {
 }
 
 .wrapper .header {
-  background: #00fff3;
+  background: #0ae324;
 }
 
 .wrapper .title {
-  padding: 19px 0;
+  padding: 33px 0;
   text-align: center;
   font-weight: 700;
-  font-size: 82px;
+  font-size: 60px;
   color: #fff;
 }
 
 .wrapper .search_box {
   max-width: 1000px;
-  background: #00fff3;
+  background: #0ae324;
   margin: 0 auto;
   padding: 25px 0 50px;
   border-radius: 3px;
