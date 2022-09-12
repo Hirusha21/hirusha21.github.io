@@ -13,7 +13,7 @@ body {
 }
 
 .wrapper .header {
-  background: #00000000;
+  background: #00fff3;
 }
 
 .wrapper .title {
@@ -26,7 +26,7 @@ body {
 
 .wrapper .search_box {
   max-width: 1000px;
-  background: #00000000;
+  background: #00fff3;
   margin: 0 auto;
   padding: 25px 0 50px;
   border-radius: 3px;
@@ -103,7 +103,7 @@ body {
 }
 
 .table_body ul li .item {
-  border-bottom: 1px solid #008cff;
+  border-bottom: 1px solid #eaeaea;
 }
 
 .table_body ul li .item .status span {
