@@ -17,8 +17,8 @@ async function renderUsers() {
             <div class="lname">
               <span>${user.Name}</span>
             </div>
-            <div class="sizes">
-              <span>${user.Size}</span>
+            <div class="times">
+              <span>${user.Time}</span>
             </div>
             <div class="ids">
               <span onclick="copy(this)" style="cursor: pointer;">${user.ID}</span>
