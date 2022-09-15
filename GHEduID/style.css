@@ -64,12 +64,12 @@ body {
 }
 
 .table_wrap ul li .item .lname{
-  width: 59%;
+  width: 54%;
   padding: 0 15px;
 }
 
-.table_wrap ul li .item .sizes {
-  width: 10%;
+.table_wrap ul li .item .times {
+  width: 15%;
   padding: 0 15px;
 }
 
