@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>GHEdu IDs - Play With GHEducations Video Fro IDs</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="wrapper">
+  <div class="header">
+    <div class="title">
+      GHEdu Player IDs
+    </div>
+
+    <div class="search_box">
+      <input type="text" id="search_input" placeholder="Search Lessons Using Lessons Names">
+    </div>
+  </div>
+
+  <div class="table_wrap">
+    <div class="table_header">
+      <ul>
+        <li>
+          <div class="item">
+            <div class="lname">
+              <span>Lesson Name</span>
+            </div>
+            <div class="times">
+              <span>Time</span>
+            </div>
+            <div class="ids">
+              <span>ID</span>
+            </div>
+            <div class="status">
+              <span class="open">Open</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="table_body">
+      <ul>
+        <div class="container"></div>
+      </ul>
+    </div>
+    <div class="table_footer"></div>
+  </div>
+
+</div>
+<!-- partial -->
+<audio style="visibility: hidden" controls autoplay>
+  <source src="new.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+  <script  src="./script.js"></script>
+<script>function copy(that){
+var inp =document.createElement('input');
+document.body.appendChild(inp)
+inp.value =that.textContent
+inp.select();
+document.execCommand('copy',false);
+inp.remove();
+}
+</script>
+<script src="api.js"></script>
+<script>
+    // disable right click
+    document.addEventListener('contextmenu', event => event.preventDefault());
+ 
+    document.onkeydown = function (e) {
+ 
+        // disable F12 key
+        if(e.keyCode == 123) {
+            return false;
+        }
+ 
+        // disable I key
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 73){
+            return false;
+        }
+ 
+        // disable J key
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+            return false;
+        }
+ 
+        // disable U key
+        if(e.ctrlKey && e.keyCode == 85) {
+            return false;
+        }
+ 
+        // disable F key
+        if(e.ctrlKey && e.keyCode == 70) {
+            return false;
+        }
+    }
+ 
+</script>
+<script>
+    // disable right click
+    document.addEventListener('contextmenu', event => event.preventDefault());
+ 
+    document.onkeydown = function (e) {
+ 
+        // disable F12 key
+        if(e.keyCode == 123) {
+            return false;
+        }
+ 
+        // disable I key
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 73){
+            return false;
+        }
+ 
+        // disable J key
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+            return false;
+        }
+ 
+        // disable U key
+        if(e.ctrlKey && e.keyCode == 85) {
+            return false;
+        }
+ 
+        // disable F key
+        if(e.ctrlKey && e.keyCode == 70) {
+            return false;
+        }
+    }
+ 
+</script>
+
+
+
+  </body>
+</html>
