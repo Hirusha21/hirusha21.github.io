@@ -7,5 +7,41 @@
 </head>
 <body style="background-color: #101010">
 <iframe style="border: none;" scrolling="no" width="100%" height="500px" src="https://script.google.com/macros/s/AKfycbxsAz59xYQvquTozM3QdRhmBT_lK2uRaTDxZwek6anr0L2-V8JnIJb-ckkIalwUwifLhg/exec"></iframe>
-</body>
+<script>
+    // disable right click
+    document.addEventListener('contextmenu', event => event.preventDefault());
+ 
+    document.onkeydown = function (e) {
+ 
+        // disable F12 key
+        if(e.keyCode == 123) {
+            return false;
+        }
+ 
+        // disable I key
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 73){
+            return false;
+        }
+ 
+        // disable J key
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+            return false;
+        }
+ 
+        // disable U key
+        if(e.ctrlKey && e.keyCode == 85) {
+            return false;
+        }
+ 
+        // disable F key
+        if(e.ctrlKey && e.keyCode == 70) {
+            return false;
+        }
+    }
+ 
+</script>
+
+
+
+  </body>
 </html>

@@ -1,0 +1,35 @@
+
+<script src="fluidplayer.min.js"></script>
+<video id="video-id"><source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+<script>
+    var myFP = fluidPlayer(
+        'video-id',	{
+	"layoutControls": {
+		"controlBar": {
+			"autoHideTimeout": 3,
+			"animated": true,
+			"autoHide": true
+		},
+		"htmlOnPauseBlock": {
+			"html": "<marquee width=\"90%\" style=\"color:lime;\" direction=\"left\">\nThis is a sample scrolling text that has scrolls texts to left.\n</marquee>",
+			"height": "",
+			"width": ""
+		},
+		"autoPlay": true,
+		"mute": false,
+		"allowTheatre": true,
+		"playPauseAnimation": true,
+		"playbackRateEnabled": true,
+		"allowDownload": true,
+		"playButtonShowing": true,
+		"fillToContainer": true,
+		"primaryColor": "#101010",
+		"posterImage": ""
+	},
+	"vastOptions": {
+		"adList": [],
+		"adCTAText": false,
+		"adCTATextPosition": ""
+	}
+});
+</script>

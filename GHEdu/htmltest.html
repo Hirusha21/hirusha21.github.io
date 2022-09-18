@@ -493,7 +493,43 @@ body.darktheme ::-webkit-scrollbar-thumb:hover {background-color: #aaaaaa;backgr
 </head>
 <body>
 
-</body>
+<script>
+    // disable right click
+    document.addEventListener('contextmenu', event => event.preventDefault());
+ 
+    document.onkeydown = function (e) {
+ 
+        // disable F12 key
+        if(e.keyCode == 123) {
+            return false;
+        }
+ 
+        // disable I key
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 73){
+            return false;
+        }
+ 
+        // disable J key
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+            return false;
+        }
+ 
+        // disable U key
+        if(e.ctrlKey && e.keyCode == 85) {
+            return false;
+        }
+ 
+        // disable F key
+        if(e.ctrlKey && e.keyCode == 70) {
+            return false;
+        }
+    }
+ 
+</script>
+
+
+
+  </body>
 </html>
 
 </textarea>
@@ -1089,7 +1125,43 @@ uic_r_e()
 <script src="/lib/spaceit.js?v=1.0.1"></script>
 <link rel="stylesheet" type="text/css" href="/lib/spaceit.css">
 
-</body>
+<script>
+    // disable right click
+    document.addEventListener('contextmenu', event => event.preventDefault());
+ 
+    document.onkeydown = function (e) {
+ 
+        // disable F12 key
+        if(e.keyCode == 123) {
+            return false;
+        }
+ 
+        // disable I key
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 73){
+            return false;
+        }
+ 
+        // disable J key
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+            return false;
+        }
+ 
+        // disable U key
+        if(e.ctrlKey && e.keyCode == 85) {
+            return false;
+        }
+ 
+        // disable F key
+        if(e.ctrlKey && e.keyCode == 70) {
+            return false;
+        }
+    }
+ 
+</script>
+
+
+
+  </body>
 </html>
 
 </textarea>
@@ -1386,5 +1458,41 @@ uic_r_e()
 </script>
 <script src="/lib/spaceit.js?v=1.0.1"></script>
 <link rel="stylesheet" type="text/css" href="/lib/spaceit.css" />
-</body>
+<script>
+    // disable right click
+    document.addEventListener('contextmenu', event => event.preventDefault());
+ 
+    document.onkeydown = function (e) {
+ 
+        // disable F12 key
+        if(e.keyCode == 123) {
+            return false;
+        }
+ 
+        // disable I key
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 73){
+            return false;
+        }
+ 
+        // disable J key
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+            return false;
+        }
+ 
+        // disable U key
+        if(e.ctrlKey && e.keyCode == 85) {
+            return false;
+        }
+ 
+        // disable F key
+        if(e.ctrlKey && e.keyCode == 70) {
+            return false;
+        }
+    }
+ 
+</script>
+
+
+
+  </body>
 </html>
