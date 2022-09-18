@@ -1,5 +1,5 @@
 async function getUsers() {
-    let url = 'https://sheetdb.io/api/v1/l9ywpezmaw30s';
+    let url = 'https://sheetdb.io/api/v1/f1xys6wfr42tw';
     try {
         let res = await fetch(url);
         return await res.json();
