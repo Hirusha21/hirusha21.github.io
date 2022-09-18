@@ -21,7 +21,7 @@ async function renderUsers() {
               <span>${user.Time}</span>
             </div>
             <div class="ids">
-              <span onclick="copy(this); window.close();" style="cursor: pointer;">${user.ID}</span>
+              <span onclick="copy(this); javascript:window.close();" style="cursor: pointer;">${user.ID}</span>
             </div>
             <div class="status">
               <span class="open">${user.Open}</span>
