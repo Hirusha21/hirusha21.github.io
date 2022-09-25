@@ -233,7 +233,7 @@
  body{
      height: 100vh;
      display: flex;
-     background-image: var(--bg-color);
+     background-image: url("https://source.unsplash.com/random/1920x1200?blackwallpaper");
      transition: background-image 1s;
      background-size: 500%;
      flex-direction: column;
@@ -250,7 +250,7 @@
  }
  
  body.dark {
-     background-image: radial-gradient(#221f22, #1E1E1E);
+     background-image: url("https://source.unsplash.com/random/1920x1200?blackwallpaper");
  }
  
  header {
