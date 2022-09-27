@@ -206,7 +206,7 @@
    
  
  :root{
-     --bg-color: linear-gradient( 109.6deg,  rgba(9,9,121,1) 11.2%, rgba(144,6,161,1) 53.7%, rgba(0,212,255,1) 100.2% );
+     --bg-color: linear-gradient( 111.5deg, rgb(255 144 101) 19.4%, rgba(255,22,22,1) 29.2%, rgba(255,22,133,1) 37.7%, rgba(255,22,197,1) 47.7%, rgba(232,22,255,1) 53.9%, rgba(162,22,255,1) 60%, rgba(80,22,255,1) 68.8%, rgba(22,104,255,1) 74.2%, rgba(22,168,255,1) 77.6%, rgba(22,255,220,1) 86.7%, rgba(22,255,179,1) 92.5%, rgba(22,255,109,1) 97.1%, rgba(92,255,22,1) 103.5% );
      --filename-color: white;
      --footer-color: #fcc700;
      --footer-font-color: black;
@@ -241,7 +241,7 @@
      padding: 0;
      align-items: center;
      justify-content: center;
-     animation: move 10s alternate infinite;
+     animation: move 30s alternate infinite;
  }
  
  body.cyber {
