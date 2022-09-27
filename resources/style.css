@@ -206,7 +206,7 @@
    
  
  :root{
-     --bg-color: linear-gradient( 109.6deg,  rgba(61,245,167,1) 11.2%, rgba(9,111,224,1) 91.1% );
+     --bg-color: linear-gradient( 109.6deg,  rgba(9,9,121,1) 11.2%, rgba(144,6,161,1) 53.7%, rgba(0,212,255,1) 100.2% );
      --filename-color: white;
      --footer-color: #fcc700;
      --footer-font-color: black;
@@ -241,7 +241,7 @@
      padding: 0;
      align-items: center;
      justify-content: center;
-     animation: move 20s alternate infinite;
+     animation: move 10s alternate infinite;
  }
  
  body.cyber {
