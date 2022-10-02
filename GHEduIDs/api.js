@@ -24,7 +24,7 @@ async function renderUsers() {
               <span onclick="copy(this)" style="cursor: pointer;">${user.VID}</span>
             </div>
             <div class="status">
-              <span class="open">${user.VOpen}</span>
+              <span onClick="parent.location='https://gheduplayer.herokuapp.com/watch/${user.VID}'" style="cursor: pointer;" class="open">${user.VOpen}</span>
             </div>
           </div>
         </li>
