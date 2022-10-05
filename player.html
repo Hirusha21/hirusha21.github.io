@@ -1,5 +1,5 @@
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="description" content="When a mysterious letter appears on the day they are being evicted, Elizabeth and her father can’t believe their luck to discover they've inherited Echoville ">
@@ -9,221 +9,260 @@
     <title> GHEducation Watcher </title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <style>
-      /* The Modal (background) */
-      .modal {
-        display: none;
-        /* Hidden by default */
-        position: fixed;
-        /* Stay in place */
-        z-index: 1;
-        /* Sit on top */
-        padding-top: 100px;
-        /* Location of the box */
-        left: 0;
-        top: 0;
-        width: 100%;
-        /* Full width */
-        height: 100%;
-        /* Full height */
-        overflow: auto;
-        /* Enable scroll if needed */
-        background-color: rgb(0, 0, 0);
-        /* Fallback color */
-        background-color: rgba(0, 0, 0, 0.4);
-        /* Black w/ opacity */
-      }
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 
-      /* Modal Content */
-      .modal-content {
-        background-color: #101010;
-        margin: auto;
-        padding: 20px;
-        border: 2px solid #fbff00;
-        width: 90%;
-      }
+/* Modal Content */
+.modal-content {
+  background-color: #101010;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid #fbff00;
+  width: 90%;
+}
 
-      /* The Close Button */
-      .close {
-        color: #ff00bc;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-      }
+/* The Close Button */
+.close {
+  color: #ff00bc;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
 
-      .close:hover,
-      .close:focus {
-        color: #f00;
-        text-decoration: none;
-        cursor: pointer;
-      }
-    </style>
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-222453323-1"></script>
-  </head>
-  <body class="dark-mode with-custom-webkit-scrollbars with-custom-css-scrollbars overflow-x-hidden">
-    <!-- Page wrapper -->
-    <div id="page-wrapper" class="page-wrapper with-navbar with-transitions with-sidebar" data-sidebar-type="default">
-      <!-- Sticky alerts -->
-      <div class="content-wrapper overflow-x-hidden">
-        <div class="container-fluid">
-          <div class="card p-0">
-            <div class="row row-eq-spacing p-0 my-15">
-              <div class="col-lg-7">
+.close:hover,
+.close:focus {
+  color: #f00;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-222453323-1"></script>
+</head>
+<body class="dark-mode with-custom-webkit-scrollbars with-custom-css-scrollbars overflow-x-hidden">
+<!-- Page wrapper -->
+<div id="page-wrapper" class="page-wrapper with-navbar with-transitions with-sidebar" data-sidebar-type="default">
+
+    <!-- Sticky alerts -->
+<div class="content-wrapper overflow-x-hidden">
+        
+<div class="container-fluid">
+    <div class="card p-0">
+        <div class="row row-eq-spacing p-0 my-15">
+            <div class="col-lg-7">
+
                 <div class="card p-5 pb-0 border-0 " id="embed-player">
-                  <div class="iframe-wrapper">
-                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.2/plyr.css" />
-                    <!--Add a Simple HTML5 Video tag-->
-                    <div id="container">
-                      <video controls data-poster="https://hirusha21.github.io/View_From_A_Blue_Moon_Trailer-HD.jpg" id="myifurl" class="vid1">
-                        <!-- Video files -->
-                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" id="myifurl" type="video/mp4" size="576" />
-                        <!-- Caption files -->
-                        <track kind="captions" label="Sinhala" srclang="si" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.si.vtt" default />
-                        <track kind="captions" label="English" srclang="en" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt" default />
-                        <track kind="captions" label="Français" srclang="fr" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt" />
-                      </video>
-                    </div>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.2/plyr.min.js"></script>
-                    <script>
-                      var controls = ['play-large', // The large play button in the center
-                        // 'restart', // Restart playback
-                        // 'rewind', // Rewind by the seek time (default 10 seconds)
-                        'play', // Play/pause playback
-                        'fast-forward', // Fast forward by the seek time (default 10 seconds)
-                        'progress', // The progress bar and scrubber for playback and buffering
-                        'current-time', // The current time of playback
-                        'duration', // The full duration of the media
-                        'mute', // Toggle mute
-                        'volume', // Volume control
-                        'captions', // Toggle captions
-                        'settings', // Settings menu
-                        'pip', // Picture-in-picture (currently Safari only)
-                        'airplay', // Airplay (currently Safari only)
-                        'download', // Show a download button with a link to either the current source or a custom URL you specify in your options
-                        'fullscreen' // Toggle fullscreen
-                      ];
-                      const player = new Plyr('.vid1', {
-                        controls
-                      });
-                    </script>
-                    <style>
-                      :root {
-                        --plyr-color-main: red;
-                        --plyr-video-control-color: yellow;
-                      }
-                    </style>
-                  </div>
-                  <div class="d-flex align-items-center justify-content-between m-10 pb-10">
-                    <div class="left"> Active: <span class="text-primary active-movie-id" id="deeemo">Lesson ID</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-5">
-                <div id="quick-embed" class="mt-15">
-                  <div class="content my-0 text-right"> Find By : <div class="dropdown selection with-arrow ml-10">
-                      <button class="btn " data-toggle="dropdown" id="myBtn" type="button">GHEdu ID <i class="fa fa-angle-down ml-5" aria-hidden="true"></i>
-                      </button>
-                      <!-- The Modal -->
-                      <div id="myModal" class="modal">
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                          <span class="close">&times;</span>
-                          <iframe src="https://hirusha21.github.io/GHEduIDs/" frameborder="0" allowfullscreen="allowfullscreen" height="650px" width="100%"></iframe>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card mx-0 mt-5 text-break border-0">
-                    <!-- Tabs Button group -->
-                    <div class="tabs p-5 bg-dark-light font-weight-semi-bold  mb-15">
-                      <a href="javascript:void(0)" class="btn d-inline-block" data-target="ids-movie-content">
-                        <i class="fa fa-film" aria-hidden="true"></i>&nbsp; Geek </a>
-                      <a href="javascript:void(0)" class="nav-link d-inline-block" data-target="ids-show-content">
-                        <i class="fa fa-television" aria-hidden="true"></i>&nbsp; Hirusha </a>
-                      <a href="javascript:void(0)" class="nav-link d-none d-sm-inline-block" data-target="ids-api-content">
-                        <i class="fa fa-magic" aria-hidden="true"></i>&nbsp; Educations </a>
-                    </div>
-                    <!--  Movies Tab Content -->
-                    <div class="tab-content active" id="ids-movie-content">
-                      <!--  Tab Content: find by tmdb or imdb ids -->
-                      <div class="find-by-uniq-id">
-                        <h3 class="card-title "> Try <span class="text-primary">
-                            <a href="https://hirusha21.github.io/GHEduID" target="_blank">GHEdu</a>
-                          </span> id To Get Lessons : </h3>
-                        <div class="form-group">
-                          <label for="username" class="required"> Enter GHEdu id</label>
-                          <br>
-                          <input size="30" style="color: #00ff2b; background-color:#20202096; border-color: #35e5c6b5; box-shadow: red;" type="text" id="myinText" placeholder="Ex: GH123456" value="">
-                        </div>
-                      </div>
-                      <!--  /. Tab Content: find by title -->
-                      <button class="btn btn-primary btn-block" onclick="myFunction()">Play Video From ID</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <span class="qe-version text-muted"> GHEdu Quick Lessons Viewer Form v1.2 </span>
-          </div>
+
+    <div class="iframe-wrapper">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.2/plyr.css" />
+
+<!--Add a Simple HTML5 Video tag-->
+<div id="container">
+  <video controls data-poster="https://hirusha21.github.io/View_From_A_Blue_Moon_Trailer-HD.jpg" id="myifurl" class="vid1">
+    <!-- Video files -->
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" id="myifurl" type="video/mp4" size="576" />
+
+    <!-- Caption files -->
+    <track kind="captions" label="Sinhala" srclang="si" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.si.vtt" default />
+    <track kind="captions" label="English" srclang="en" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt" default />
+    <track kind="captions" label="Français" srclang="fr" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt" />
+
+  </video>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.2/plyr.min.js"></script>
+
+<script>
+  var controls =
+[
+    'play-large', // The large play button in the center
+   // 'restart', // Restart playback
+   // 'rewind', // Rewind by the seek time (default 10 seconds)
+    'play', // Play/pause playback
+    'fast-forward', // Fast forward by the seek time (default 10 seconds)
+    'progress', // The progress bar and scrubber for playback and buffering
+    'current-time', // The current time of playback
+    'duration', // The full duration of the media
+    'mute', // Toggle mute
+    'volume', // Volume control
+    'captions', // Toggle captions
+    'settings', // Settings menu
+    'pip', // Picture-in-picture (currently Safari only)
+    'airplay', // Airplay (currently Safari only)
+    'download', // Show a download button with a link to either the current source or a custom URL you specify in your options
+    'fullscreen' // Toggle fullscreen
+];
+
+  const player = new Plyr('.vid1',{controls});
+</script>
+
+<style>
+  :root {
+  --plyr-color-main: red;
+    --plyr-video-control-color  :yellow;
+}
+
+</style>
+    </div>
+
+    <div class="d-flex align-items-center justify-content-between m-10 pb-10">
+        <div class="left">
+            Active:
+            <span class="text-primary active-movie-id" id="deeemo">Lesson ID</span>
         </div>
-      </div>
-      <script>
-        function myFunction() {
-          var x = document.getElementById("myinText").value;
-          var linke = "https://gheduplayer.herokuapp.com/" + x;
-          document.getElementById("myifurl").src = linke;
-          document.getElementById("deeemo").innerHTML = x;
+    </div>
+</div>
+</div>
+<div class="col-lg-5">
+
+
+                <div id="quick-embed" class="mt-15">
+
+                    <div class="content my-0 text-right">
+                        Find By :
+                        <div class="dropdown selection with-arrow ml-10">
+                            <button class="btn " data-toggle="dropdown" id="myBtn" type="button">GHEdu ID<i class="fa fa-angle-down ml-5" aria-hidden="true"></i>
+                            </button>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <iframe src="https://hirusha21.github.io/GHEduIDs/" frameborder="0" allowfullscreen="allowfullscreen" height="650px" width="100%"></iframe>
+  </div>
+
+</div>
+                        </div>
+                    </div>
+
+                    <div class="card mx-0 mt-5 text-break border-0">
+
+                        <!-- Tabs Button group -->
+                        <div class="tabs p-5 bg-dark-light font-weight-semi-bold  mb-15">
+                            <a href="javascript:void(0)" class="btn d-inline-block" data-target="ids-movie-content">
+                                <i class="fa fa-film" aria-hidden="true"></i>&nbsp;
+                                Geek                            </a>
+                            <a href="javascript:void(0)" class="nav-link d-inline-block" data-target="ids-show-content">
+                                <i class="fa fa-television" aria-hidden="true"></i>&nbsp;
+                                Hirusha                            </a>
+                            <a href="javascript:void(0)" class="nav-link d-none d-sm-inline-block" data-target="ids-api-content">
+                                <i class="fa fa-magic" aria-hidden="true"></i>&nbsp;
+                                Educations                            </a>
+                        </div>
+
+                        <!--  Movies Tab Content -->
+                        <div class="tab-content active" id="ids-movie-content">
+
+                            <!--  Tab Content: find by tmdb or imdb ids -->
+                            <div class="find-by-uniq-id">
+                                <h3 class="card-title ">
+                                    Try 
+                <span class="text-primary"><a href="https://hirusha21.github.io/GHEduID" target="_blank">GHEdu</a></span>
+                id To Get Lessons :
+                                </h3>
+                                <div class="form-group">
+                                    <label for="username" class="required">
+                                        Enter GHEdu id</label><br>
+                                    <input size="30" style="color: #00ff2b; background-color:#20202096; border-color: #35e5c6b5; box-shadow: red;" type="text" id="myinText" placeholder="Ex: GH123456" value="">
+                                </div>
+                            </div>
+                            <!--  /. Tab Content: find by title -->
+                            <button class="btn btn-primary btn-block"  onclick="myFunction()">Play Video From ID</button>
+                        </div>
+                    </div>
+                </div>                               
+            </div>
+        </div>
+        <span class="qe-version text-muted">
+            GHEdu Quick Lessons Viewer Form v1.2
+        </span>
+    </div> 
+</div>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myinText").value;
+  var linke = "https://gheduplayer.herokuapp.com/"+x;
+    document.getElementById("myifurl").src = linke;
+    document.getElementById("deeemo").innerHTML = x;
+}
+</script>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<script>
+    // disable right click
+    document.addEventListener('contextmenu', event => event.preventDefault());
+ 
+    document.onkeydown = function (e) {
+ 
+        // disable F12 key
+        if(e.keyCode == 123) {
+            return false;
         }
-      </script>
-      <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
-        // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
-        // Get the 
-        < span > element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-        // When the user clicks the button, open the modal 
-        btn.onclick = function() {
-            modal.style.display = "block";
-          }
-          // When the user clicks on 
-          < span > (x), close the modal
-        span.onclick = function() {
-          modal.style.display = "none";
+ 
+        // disable I key
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 73){
+            return false;
         }
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-          if (event.target == modal) {
-            modal.style.display = "none";
-          }
+ 
+        // disable J key
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+            return false;
         }
-      </script>
-      <script>
-        // disable right click
-        document.addEventListener('contextmenu', event => event.preventDefault());
-        document.onkeydown = function(e) {
-          // disable F12 key
-          if (e.keyCode == 123) {
+ 
+        // disable U key
+        if(e.ctrlKey && e.keyCode == 85) {
             return false;
-          }
-          // disable I key
-          if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
-            return false;
-          }
-          // disable J key
-          if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
-            return false;
-          }
-          // disable U key
-          if (e.ctrlKey && e.keyCode == 85) {
-            return false;
-          }
-          // disable F key
-          if (e.ctrlKey && e.keyCode == 70) {
-            return false;
-          }
         }
-      </script>
+ 
+        // disable F key
+        if(e.ctrlKey && e.keyCode == 70) {
+            return false;
+        }
+    }
+ 
+</script>
+
+
+
   </body>
 </html>
