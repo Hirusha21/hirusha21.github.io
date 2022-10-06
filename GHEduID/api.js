@@ -12,24 +12,22 @@ async function renderUsers() {
     let html = '';
     users.forEach(user => {
         let htmlSegment = `<div class="user">
-<ol>
-    <li>
-              <div class="item">
-                <div class="lname">
-                  <span>${user.Name}</span>
-                </div>
-                <div class="times">
-                  <span>${user.Time}</span>
-                </div>
-                <div class="ids">
-                  <span onclick="copy(this)" style="cursor: pointer;">${user.ID}</span>
-                </div>
-                <div class="status">
-                  <span onClick="parent.location='https://gheduplayer.herokuapp.com/watch/${user.ID}'" style="cursor: pointer;" class="open">${user.Open}</span>
-                </div>
-              </div>
-            </li>
-            </ol>
+<li>
+          <div class="item">
+            <div class="lname">
+              <span>${user.Name}</span>
+            </div>
+            <div class="times">
+              <span>${user.Time}</span>
+            </div>
+            <div class="ids">
+              <span onclick="copy(this)" style="cursor: pointer;">${user.ID}</span>
+            </div>
+            <div class="status">
+              <span onClick="parent.location='https://gheduplayer.herokuapp.com/watch/${user.ID}'" style="cursor: pointer;" class="open">${user.Open}</span>
+            </div>
+          </div>
+        </li>
                         </div>`;
 
         html += htmlSegment;
