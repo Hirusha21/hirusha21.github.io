@@ -15,7 +15,7 @@ async function renderUsers() {
 <li>
           <div class="item">
             <div class="lname">
-              <span>${user.Name}</span>
+              <span><b>${user.No}</b>${user.Name}</span>
             </div>
             <div class="times">
               <span>${user.Time}</span>
